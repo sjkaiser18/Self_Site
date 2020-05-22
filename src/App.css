@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+html{
+  background-color:#82667F;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -21,12 +25,12 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
   color: #61dafb;
 }
+
 
 @keyframes App-logo-spin {
   from {
@@ -38,12 +42,22 @@
 }
 
 .dresser-top{
-  background-image:url("./app/images/top.jpg");
-  color:orange;
+  background-size: stretch;
+}
+
+.top{
+width:100%;
+height:300px;
+margin-top:0px;
+z-index:2;
+position:relative;
+}
+
+h2{
+  color:#FAA4BD;
   font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif; 
   z-index:3;
-  padding-top:30px;
-  background-size: stretch;
+  margin-top:10px;
 }
 
 .handle{
@@ -53,17 +67,13 @@
   z-index:-1;
 }
 
-select {
-  border: 0px;
-  outline:0px;
-}
-
 .dropdown-menu {
   border: 1px solid #000000;
   background-color: transparent;
   border-bottom-color: transparent;
   padding-top: 5px;
   padding-bottom: 0px;
+  z-index:-1;
 }
 .dropdown {
   border: 0px;
@@ -71,35 +81,42 @@ select {
   border-bottom-color: transparent;
   padding-top: 0px;
   padding-bottom: 0px;
+  z-index:0;
+ 
 }
 
 @keyframes slidein {
   from {
     margin-top: -50%;
     width: 95%; 
+    
   }
 
   to {
     margin-top: -20%;
     width: 95%;
+    
   }
 }
+
 .mail{
   width:11%;
   height:auto;
-  z-index:4;
+  z-index:3;
+  margin-top:-300px;
+  top:-30px;
   transform:rotate(11deg);
-  
+  position:relative;
 }
 
 .lamp{
   width:15%;
   height:auto;
-  z-index:4;
+  z-index:3;
   transform:rotate(11deg);
   position:absolute;
   left:0px;
-  top:-30px;
+  top:-10px;
   transform:rotate(100deg);
 
 }
@@ -112,30 +129,32 @@ select {
 
 .drawer-1{
   margin-top:-20%;
-  z-index:1;
 }
 
 .drawer-2{
   margin-top:-20%;
-  z-index:1;
+ 
 }
 
 .drawer-3{
   margin-top:-20%;
-  z-index:1;
+
 }
 
 
 .drawer-1:hover .handle{
   opacity:0;
+ 
 }
 
 .drawer-2:hover .handle{
   opacity:0;
+  
 }
 
 .drawer-3:hover .handle{
   opacity:0;
+  
 }
 
 .drawer-1:hover .dropdown-menu {
@@ -148,7 +167,7 @@ select {
   border: 0px;
   background-color: transparent;
   border-bottom-color: transparent;
-  z-index:-1;
+
 }
 
 .drawer-2:hover .dropdown-menu {
@@ -161,7 +180,7 @@ select {
   border: 0px;
   background-color: transparent;
   border-bottom-color: transparent;
-  z-index:-1;
+  
 
 }
 
@@ -175,6 +194,6 @@ select {
   border: 0px;
   background-color: transparent;
   border-bottom-color: transparent;
-  z-index:-1;
+  
 }
 

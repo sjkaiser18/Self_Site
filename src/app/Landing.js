@@ -1,26 +1,20 @@
 import React from 'react';
-import Dating from './images/dating.png';
-import DIY from './images/diy.png';
-import Fashion from './images/fashion.png';
 import Handle from './images/handle.png';
 import Back from './images/backup.png';
 import Mail from './images/envelope.jpg';
 import Lamp from './images/lamp.png';
+import Top from './images/top.jpg';
 export class Landing extends React.Component {
   render() {
     return (
-
+      <html>
       <div className="landing">
 
         <div class="dresser-top">
-        <img class="lamp" src={Lamp}></img>
-        <img class="mail" src={Mail}></img>
-        
-          <h2>
-            Welcome to the portfolio of Sarah Kaiser
-          </h2>
-            
-            <hr></hr>
+        <img class="top" src={Top}></img>
+          <img class="lamp" src={Lamp}></img>
+          <img class="mail" src={Mail}></img>
+  
         </div>
 
         <div class="container">
@@ -83,8 +77,10 @@ export class Landing extends React.Component {
 
 
         </div>
-      </div>
 
+        <h2>Welcome to Sarah Kaiser's portfolio</h2>
+      </div>
+      </html>
     )
   }
 } export default Landing
