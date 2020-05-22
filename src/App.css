@@ -36,3 +36,117 @@
     transform: rotate(360deg);
   }
 }
+
+.dresser-top{
+  background-image:url("./app/images/top.jpg");
+  color:orange;
+  font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif; 
+  z-index:3;
+  padding-top:30px;
+  background-size: stretch;
+}
+.handle{
+  width:60px;
+  height:60px;
+  margin-top:30px;
+  z-index:-1;
+}
+
+select {
+  border: 0px;
+  outline:0px;
+}
+
+.dropdown-menu {
+  border: 1px solid #000000;
+  background-color: transparent;
+  border-bottom-color: transparent;
+  padding-top: 5px;
+  padding-bottom: 0px;
+}
+.dropdown {
+  border: 0px;
+  background-color: transparent;
+  border-bottom-color: transparent;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+@keyframes slidein {
+  from {
+    margin-top: -50%;
+    width: 95%; 
+  }
+
+  to {
+    margin-top: -20%;
+    width: 95%;
+  }
+}
+
+.drawer-1{
+  margin-top:-20%;
+  z-index:1;
+}
+
+.drawer-2{
+  margin-top:-20%;
+  z-index:1;
+}
+
+.drawer-3{
+  margin-top:-20%;
+  z-index:1;
+}
+
+.drawer-1:hover .handle{
+  opacity:0;
+}
+
+.drawer-2:hover .handle{
+  opacity:0;
+}
+
+.drawer-3:hover .handle{
+  opacity:0;
+}
+.drawer-1:hover .dropdown-menu {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: 1;
+  display: block;
+  width:95%;
+  margin-top:-20%;
+  border: 0px;
+  background-color: transparent;
+  border-bottom-color: transparent;
+  z-index:-1;
+}
+
+.drawer-2:hover .dropdown-menu {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: 1;
+  display: block;
+  width:95%;
+  margin-top:-20%;
+  border: 0px;
+  background-color: transparent;
+  border-bottom-color: transparent;
+  z-index:-1;
+
+}
+
+.drawer-3:hover .dropdown-menu {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: 1;
+  display: block;
+  width:95%;
+  margin-top:-20%;
+  border: 0px;
+  background-color: transparent;
+  border-bottom-color: transparent;
+  z-index:-1;
+}
+
