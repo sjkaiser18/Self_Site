@@ -4,6 +4,7 @@ import Back from './images/backup.png';
 import Mail from './images/envelope.jpg';
 import Lamp from './images/lamp.png';
 import Top from './images/top.jpg';
+import Rug from './images/rug.png';
 export class Landing extends React.Component {
   render() {
     return (
@@ -79,6 +80,7 @@ export class Landing extends React.Component {
         </div>
 
         <h2>Welcome to Sarah Kaiser's portfolio</h2>
+        <img class='rug' src={Rug}></img>
       </div>
       </html>
     )

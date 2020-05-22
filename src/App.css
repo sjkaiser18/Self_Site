@@ -49,7 +49,7 @@ html{
 width:100%;
 height:300px;
 margin-top:0px;
-z-index:2;
+z-index:3;
 position:relative;
 }
 
@@ -81,7 +81,7 @@ h2{
   border-bottom-color: transparent;
   padding-top: 0px;
   padding-bottom: 0px;
-  z-index:0;
+  z-index:2;
  
 }
 
@@ -102,7 +102,7 @@ h2{
 .mail{
   width:11%;
   height:auto;
-  z-index:3;
+  z-index:4;
   margin-top:-300px;
   top:-30px;
   transform:rotate(11deg);
@@ -112,7 +112,7 @@ h2{
 .lamp{
   width:15%;
   height:auto;
-  z-index:3;
+  z-index:4;
   transform:rotate(11deg);
   position:absolute;
   left:0px;
@@ -197,3 +197,10 @@ h2{
   
 }
 
+.rug{
+  position:fixed;
+  right:-30px;
+  bottom:-200px;
+  transform:scale(1.2);
+  z-index:1;
+}
