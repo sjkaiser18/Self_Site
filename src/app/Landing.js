@@ -4,6 +4,8 @@ import DIY from './images/diy.png';
 import Fashion from './images/fashion.png';
 import Handle from './images/handle.png';
 import Back from './images/backup.png';
+import Mail from './images/envelope.jpg';
+import Lamp from './images/lamp.png';
 export class Landing extends React.Component {
   render() {
     return (
@@ -11,11 +13,14 @@ export class Landing extends React.Component {
       <div className="landing">
 
         <div class="dresser-top">
+        <img class="lamp" src={Lamp}></img>
+        <img class="mail" src={Mail}></img>
+        
           <h2>
             Welcome to the portfolio of Sarah Kaiser
-            <hr></hr>
-            <hr></hr>
           </h2>
+            
+            <hr></hr>
         </div>
 
         <div class="container">
