@@ -2,8 +2,8 @@
   text-align: center;
 }
 
-html{
-  background-color:#82667F;
+html {
+  background-color: #82667F;
 }
 
 .App-logo {
@@ -36,35 +36,36 @@ html{
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
-.dresser-top{
+.dresser-top {
   background-size: stretch;
 }
 
-.top{
-width:100%;
-height:300px;
-margin-top:0px;
-z-index:3;
-position:relative;
+.top {
+  width: 100%;
+  height: 300px;
+  margin-top: 0px;
+  z-index: 3;
+  position: relative;
 }
 
-h2{
-  color:#FAA4BD;
-  font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif; 
-  z-index:3;
-  margin-top:10px;
+h2 {
+  color: #FAA4BD;
+  font-family: Didot, Didot LT STD, Hoefler Text, Garamond, Times New Roman, serif;
+  z-index: 3;
+  margin-top: 10px;
 }
 
-.handle{
-  width:60px;
-  height:60px;
-  margin-top:30px;
-  z-index:-1;
+.handle {
+  width: 60px;
+  height: 60px;
+  margin-top: 30px;
+  z-index: -1;
 }
 
 .dropdown-menu {
@@ -73,134 +74,111 @@ h2{
   border-bottom-color: transparent;
   padding-top: 5px;
   padding-bottom: 0px;
-  z-index:-1;
+  z-index: -1;
 }
+
 .dropdown {
   border: 0px;
   background-color: transparent;
   border-bottom-color: transparent;
   padding-top: 0px;
   padding-bottom: 0px;
-  z-index:2;
- 
+  z-index: 2;
+
 }
 
 @keyframes slidein {
   from {
     margin-top: -50%;
-    width: 95%; 
-    
+    width: 95%;
+
   }
 
   to {
     margin-top: -20%;
     width: 95%;
-    
+
   }
 }
 
-.mail{
-  width:11%;
-  height:auto;
-  z-index:4;
-  margin-top:-300px;
-  top:-30px;
-  transform:rotate(11deg);
-  position:relative;
+.mail {
+  width: 11%;
+  height: auto;
+  z-index: 4;
+  margin-top: -300px;
+  top: -30px;
+  transform: rotate(11deg);
+  position: relative;
 }
 
-.lamp{
-  width:15%;
-  height:auto;
-  z-index:4;
-  transform:rotate(11deg);
-  position:absolute;
-  left:0px;
-  top:-10px;
-  transform:rotate(100deg);
+.lamp {
+  width: 15%;
+  height: auto;
+  z-index: 4;
+  transform: rotate(11deg);
+  position: absolute;
+  left: 0px;
+  top: -10px;
+  transform: rotate(100deg);
 
 }
 
-.mail:active{
+.mail:active {
   animation-duration: 3s;
   animation-name: spin;
   animation-iteration-count: 1;
 }
 
-.drawer-1{
-  margin-top:-20%;
+.drawer-1,.drawer-2 ,.drawer-3{
+  margin-top: -20%;
 }
 
-.drawer-2{
-  margin-top:-20%;
- 
-}
-
-.drawer-3{
-  margin-top:-20%;
+.drawer-1:hover .handle, 
+.drawer-2:hover .handle, 
+.drawer-3:hover .handle {
+  opacity: 0;
 
 }
-
-
-.drawer-1:hover .handle{
-  opacity:0;
- 
-}
-
-.drawer-2:hover .handle{
-  opacity:0;
-  
-}
-
-.drawer-3:hover .handle{
-  opacity:0;
-  
-}
-
-.drawer-1:hover .dropdown-menu {
+.drawer-1:hover .dropdown-menu, .drawer-2:hover .dropdown-menu, .drawer-3:hover .dropdown-menu  {
   animation-duration: 3s;
   animation-name: slidein;
   animation-iteration-count: 1;
   display: block;
-  width:95%;
-  margin-top:-20%;
+  width: 95%;
+  margin-top: -20%;
   border: 0px;
   background-color: transparent;
   border-bottom-color: transparent;
 
 }
 
-.drawer-2:hover .dropdown-menu {
-  animation-duration: 3s;
-  animation-name: slidein;
-  animation-iteration-count: 1;
-  display: block;
-  width:95%;
-  margin-top:-20%;
-  border: 0px;
-  background-color: transparent;
-  border-bottom-color: transparent;
-  
-
+.rug {
+  position: fixed;
+  right: -30px;
+  bottom: -200px;
+  transform: scale(1.2);
+  z-index: 1;
 }
 
-.drawer-3:hover .dropdown-menu {
-  animation-duration: 3s;
-  animation-name: slidein;
-  animation-iteration-count: 1;
-  display: block;
-  width:95%;
-  margin-top:-20%;
-  border: 0px;
-  background-color: transparent;
-  border-bottom-color: transparent;
-  
+.shop {
+  background-color: #82667F;
 }
 
-.rug{
-  position:fixed;
-  right:-30px;
-  bottom:-200px;
-  transform:scale(1.2);
-  z-index:1;
+.card {
+  max-width: 60em;
+  left: auto;
+  right: auto;
+  margin-top:2em;
+  padding: 1em;
+}
+
+.shop-mail {
+  transform: scale(.8);
+  left: auto;
+  right: auto;
+  width: 50%;
+}
+
+label {
+  padding: .5em 2em;
 }

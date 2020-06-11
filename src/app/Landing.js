@@ -1,4 +1,6 @@
 import React from 'react';
+import { BrowserRouter as Router, Switch, Route, Link,NavLink,Redirect } from 'react-router-dom';
+import Shop from './Shop.js';
 import Handle from './images/handle.png';
 import Back from './images/backup.png';
 import Mail from './images/envelope.jpg';
@@ -14,8 +16,11 @@ export class Landing extends React.Component {
         <div class="dresser-top">
         <img class="top" src={Top}></img>
           <img class="lamp" src={Lamp}></img>
-          <img class="mail" src={Mail}></img>
-  
+          
+          <Link  to={`/Shop`}>
+            <img class="mail" src={Mail}></img>
+          </Link>
+          
         </div>
 
         <div class="container">
@@ -79,7 +84,7 @@ export class Landing extends React.Component {
 
         </div>
 
-        <h2>Welcome to Sarah Kaiser's portfolio</h2>
+        <h2>Welcome to Sarah Kaiser's portfolio!</h2>
         <img class='rug' src={Rug}></img>
       </div>
       </html>
